@@ -83,7 +83,7 @@ export const Navbar = ()=>{
                  p='8px'
                  justifyContent='space-evenly'
                 >
-                 <Link to='/' >HOME</Link>
+                 <Link to="" >HOME</Link>
                  <Link to="/myFeed">MY FEED</Link>
                  <Link to="/india">INDIA</Link>
                  <Link  to='/world'>WORLD</Link>
