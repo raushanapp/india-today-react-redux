@@ -1,36 +1,36 @@
 
-
 import { Box, Divider, Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
 // import {Link} from "react-router-dom"
 import React from "react";
-const moviesLife=[
+const business=[
     {
-      heading:"MOVIES",
-      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/varun_tej_lagaan.jpg?size=370:208",
-      title:"Varun Tej reacts to South vs Hindi language debate",
-      subTitle1:"Sanjana Sanghi goes 'oh man' on Aditya Roy Kapur's chiselled physique in Rashtra Kavach Om | Exclusive",
-      subTitle2:"Masoom star Boman Irani's message for young actors: Don't let the perks of the job get to you | Exclusive"
+      heading:"BUSINESS",
+      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/Bombay_stock_exchange_PTI_0.jpeg?size=370:208",
+      title:"Markets decline for 6th day; Sensex sheds 135 points",
+      subTitle1:"Rate, inflation worries set Indian shares for worst week since May 2020",
+      subTitle2:"Gold, silver prices dip on MCX | Check city-wise rates here"
     },
     {
-        heading:"LIFESYTLE",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/BeFunky-collage_-_2022-06-17T2.jpg?size=370:208",
-        title:"Shilpa Shetty and her love for vibrant prints. On Fashion Friday",
-        subTitle1:"Mahira Khan exudes ethnic elegance in floral-embroidered suit in new pics",
-        subTitle2:"Malaika in backless metallic dress is next level glamorous. Kareena reacts"
+        heading:"TELEVISION",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/MUnawar_0_1200x768.jpeg?size=370:208",
+        title:"Munawar Faruqui won't be part of Khatron Ke Khiladi 12, says he needs time alone",
+        subTitle1:"Ramdev and Zeenat Aman to Jugjugg Jeeyo cast on reality shows: What to watch on TV this weekend",
+        subTitle2:"Fight For My Way to Angel's Last Mission Love, exciting line-up of K-dramas dubbed in Hindi announced"
     },
     {
-        heading:"SPORTS",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202206/haridkindvsa4tht20i_1200x768.jpeg?size=370:208",
-        title:"IND vs SA, 4th T20I LIVE: Harshal Patel removes dangerous David Miller",
-        subTitle1:"IND vs SA: Dinesh Karthik breaks MS Dhoni record after maiden T20I fifty",
-        subTitle2:"Tottenham look for top-four push, bring in Yves Bissouma as third signing of the summer"
+        heading:"NEWS ANALYSIS",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/Motilal_vora_1200x768.jpeg?size=370:208",
+        title:"Motilal Vora: Quintessential Congressman who knew how money came into party’s coffers and how it was spent",
+        subTitle1:"BJP’s presidential nominee will be a surprise. But who might that be?",
+        subTitle2:"No name. But consensus on a consensus candidate: Mamata's meet separates self-seeking from committed Opposition"
     }
 
 ]
-export const MoviesLifeSports =()=>{
 
+export const BusinessTelevision = () =>{
 
     return (
+
         <Box display='flex'
         //  border='2px solid'
         //  borderColor='yellow.500'
@@ -40,7 +40,7 @@ export const MoviesLifeSports =()=>{
          gap='20px'
          justifyContent='space-around'
         >
-         {moviesLife.map((e,index)=>(
+         {business.map((e,index)=>(
             <Box key={index} display='flex'
             // border='1px solid'
             // borderColor='blue.500'
@@ -91,5 +91,7 @@ export const MoviesLifeSports =()=>{
             </Box>
          ))}
         </Box>
+    
     )
+    
 }

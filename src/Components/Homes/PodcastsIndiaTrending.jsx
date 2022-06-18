@@ -1,33 +1,32 @@
 
-
 import { Box, Divider, Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
 // import {Link} from "react-router-dom"
 import React from "react";
-const moviesLife=[
+const podcastsIndia=[
     {
-      heading:"MOVIES",
-      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/varun_tej_lagaan.jpg?size=370:208",
-      title:"Varun Tej reacts to South vs Hindi language debate",
-      subTitle1:"Sanjana Sanghi goes 'oh man' on Aditya Roy Kapur's chiselled physique in Rashtra Kavach Om | Exclusive",
-      subTitle2:"Masoom star Boman Irani's message for young actors: Don't let the perks of the job get to you | Exclusive"
+      heading:"PODCASTS",
+      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/IOD_India_Today_website_0.png?size=370:208",
+      title:"Agnipareeksha for big-bang military reforms | In our Defence, Ep 12",
+      subTitle1:"Why Kohli shouldn't have been rested vs South Africa | Sledging Room Episode 01",
+      subTitle2:"Kashmir and its Security Puzzle | In our Defence Ep 11"
     },
     {
-        heading:"LIFESYTLE",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/BeFunky-collage_-_2022-06-17T2.jpg?size=370:208",
-        title:"Shilpa Shetty and her love for vibrant prints. On Fashion Friday",
-        subTitle1:"Mahira Khan exudes ethnic elegance in floral-embroidered suit in new pics",
-        subTitle2:"Malaika in backless metallic dress is next level glamorous. Kareena reacts"
+        heading:"TREDING",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/BeFunky-collage_-_2022-06-17T1_3.jpg?size=370:208",
+        title:"Blindfolded man makes Sonu Sood's portrait in viral video",
+        subTitle1:"Cute video of a little girl comforting her new pet puppy will melt your heart. Watch",
+        subTitle2:"Harsh Goenka shares viral video of man making gigantic rumali rotis"
     },
     {
-        heading:"SPORTS",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202206/haridkindvsa4tht20i_1200x768.jpeg?size=370:208",
-        title:"IND vs SA, 4th T20I LIVE: Harshal Patel removes dangerous David Miller",
-        subTitle1:"IND vs SA: Dinesh Karthik breaks MS Dhoni record after maiden T20I fifty",
-        subTitle2:"Tottenham look for top-four push, bring in Yves Bissouma as third signing of the summer"
+        heading:"INDIA",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/pjimage_-_2022-06-17T212644.36.jpg?size=370:208",
+        title:"Agra remains calm during Friday prayers as police step up vigil",
+        subTitle1:"Protesters burn trains, block highways as fury over Agnipath rocks nation | Visuals",
+        subTitle2:"In UP's 'warrior village', military aspirants sceptical about Agnipath scheme"
     }
 
 ]
-export const MoviesLifeSports =()=>{
+export const PodCastsIndia =()=>{
 
 
     return (
@@ -40,7 +39,7 @@ export const MoviesLifeSports =()=>{
          gap='20px'
          justifyContent='space-around'
         >
-         {moviesLife.map((e,index)=>(
+         {podcastsIndia.map((e,index)=>(
             <Box key={index} display='flex'
             // border='1px solid'
             // borderColor='blue.500'

@@ -1,34 +1,34 @@
-
-
 import { Box, Divider, Heading, Image, ListItem, UnorderedList } from "@chakra-ui/react";
 // import {Link} from "react-router-dom"
 import React from "react";
-const moviesLife=[
+const autoCities=[
     {
-      heading:"MOVIES",
-      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/varun_tej_lagaan.jpg?size=370:208",
-      title:"Varun Tej reacts to South vs Hindi language debate",
-      subTitle1:"Sanjana Sanghi goes 'oh man' on Aditya Roy Kapur's chiselled physique in Rashtra Kavach Om | Exclusive",
-      subTitle2:"Masoom star Boman Irani's message for young actors: Don't let the perks of the job get to you | Exclusive"
+      heading:"AUTO",
+      image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/Picture_1_1200x768.png?size=370:208",
+      title:"JK Tyre announce motorsport plans for 2022: Gaurav Gill pilot run at WRC Kenya and more",
+      subTitle1:"2022 Hyundai Venue launched at Rs 7.53 lakh",
+      subTitle2:"Citroen C3 review, first drive"
     },
     {
-        heading:"LIFESYTLE",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/BeFunky-collage_-_2022-06-17T2.jpg?size=370:208",
-        title:"Shilpa Shetty and her love for vibrant prints. On Fashion Friday",
-        subTitle1:"Mahira Khan exudes ethnic elegance in floral-embroidered suit in new pics",
-        subTitle2:"Malaika in backless metallic dress is next level glamorous. Kareena reacts"
+        heading:"EDUCATION TODAY",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/naveen-patnaik_pti_0_1200x768.png?size=370:208",
+        title:"Residential school for underprivileged children in Kalahandi inaugurated by Odisha CM",
+        subTitle1:"UNICEF conducts workshop for effective reporting on child health",
+        subTitle2:"50-year-old BMC sanitation worker sweeps through Maharashtra Class 10 board exam with 57% marks"
     },
     {
-        heading:"SPORTS",
-        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202206/haridkindvsa4tht20i_1200x768.jpeg?size=370:208",
-        title:"IND vs SA, 4th T20I LIVE: Harshal Patel removes dangerous David Miller",
-        subTitle1:"IND vs SA: Dinesh Karthik breaks MS Dhoni record after maiden T20I fifty",
-        subTitle2:"Tottenham look for top-four push, bring in Yves Bissouma as third signing of the summer"
+        heading:"CITIES",
+        image:"https://akm-img-a-in.tosshub.com/indiatoday/images/story/202206/1200_(2)_3.jpg?size=370:208",
+        title:"8 held with gold worth Rs 3.9 crore at Mumbai airport",
+        subTitle1:"Child trafficking racket busted in Delhi; infant rescued",
+        subTitle2:"Fire breaks out in wooden factory in Delhi's Bindapur; no casualties"
     }
 
 ]
-export const MoviesLifeSports =()=>{
 
+
+
+export const AutoCities = ()=>{
 
     return (
         <Box display='flex'
@@ -40,7 +40,7 @@ export const MoviesLifeSports =()=>{
          gap='20px'
          justifyContent='space-around'
         >
-         {moviesLife.map((e,index)=>(
+         {autoCities.map((e,index)=>(
             <Box key={index} display='flex'
             // border='1px solid'
             // borderColor='blue.500'

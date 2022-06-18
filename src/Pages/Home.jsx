@@ -3,7 +3,16 @@ import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import{useDispatch, useSelector} from "react-redux"
+import { AutoCities } from "../Components/Homes/AutoCities";
+import { BusinessTelevision } from "../Components/Homes/BusinessTelevison";
 import { HomeSlider } from "../Components/Homes/Homes.Slider";
+import { Magazine } from "../Components/Homes/Magazine";
+import { MoviesLifeSports } from "../Components/Homes/MoviesLifeSports";
+import { PhotoAnchor } from "../Components/Homes/PhotoAnchor";
+import { PodCastsIndia } from "../Components/Homes/PodcastsIndiaTrending";
+import { Programme } from "../Components/Homes/Programme";
+import { Science } from "../Components/Homes/Science";
+import { Technology } from "../Components/Homes/Technology";
 import { TodaySpecial } from "../Components/Homes/TodaySpecial";
 import { VisualStories } from "../Components/Homes/VisualStories";
 import { getHome } from "../Stores/Homes/action.homes";
@@ -244,9 +253,50 @@ export const Home = ()=>{
           {/* visual stories and today special end */}
           {/* movies lifestyle and sports start box */}
            <Box>
-            
+              <MoviesLifeSports/>
            </Box>
           {/* movies lifestyle and sports end  box */}
+          {/* podcasts india box start */}
+             <Box>
+                <PodCastsIndia/>
+             </Box>
+          {/* podcasts india box end */}
+          {/* From  the magazine start box */}
+             <Box>
+                 <Magazine/>
+             </Box>
+          {/* From  the magazine end box */}
+          {/* photo and anchor start box */}
+            <Box>
+                 <PhotoAnchor/>
+            </Box>
+          {/* photo and anchor end box */}
+          {/* science and technology box start */}
+            <Box display='flex'
+            //   border='2px solid'
+            //   borderColor='orange.500'
+              w='100%'
+              h='700px'
+              gap='10px'
+              p='10px'
+              justifyContent='space-around'
+            
+            >
+             <Science/>
+             <Technology/>
+             <Programme/>
+            </Box>
+          {/* science and technology box end */}
+          {/* television business news analysis box start */}
+           <Box>
+              <BusinessTelevision/>
+           </Box>
+          {/* television business news analysis box end */}
+          {/* auto cities education box start */}
+            <Box>
+                <AutoCities/>
+            </Box>
+          {/* auto cities education box end */}
         </Box>
         // last main box side 
     )
