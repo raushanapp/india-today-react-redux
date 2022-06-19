@@ -5,7 +5,12 @@ import { useEffect } from "react";
 import{useDispatch, useSelector} from "react-redux"
 import { AutoCities } from "../Components/Homes/AutoCities";
 import { BusinessTelevision } from "../Components/Homes/BusinessTelevison";
+import { HealthWorld } from "../Components/Homes/HealthWorld";
 import { HomeSlider } from "../Components/Homes/Homes.Slider";
+import { LatestDaily } from "../Components/Homes/LatestDailyo";
+import { LatestAaj } from "../Components/Homes/LatestFromAaj";
+import { LatestLotThe } from "../Components/Homes/LatestLot";
+import { LawCrime } from "../Components/Homes/LawCrime";
 import { Magazine } from "../Components/Homes/Magazine";
 import { MoviesLifeSports } from "../Components/Homes/MoviesLifeSports";
 import { PhotoAnchor } from "../Components/Homes/PhotoAnchor";
@@ -297,6 +302,32 @@ export const Home = ()=>{
                 <AutoCities/>
             </Box>
           {/* auto cities education box end */}
+          {/* health world india today insight box start */}
+            <Box>
+                <HealthWorld/>
+            </Box>
+          {/* health world india today insight box end */}
+          {/* law crime box start */}
+            <Box>
+                <LawCrime/>
+            </Box>
+          {/* law crime box end */}
+          {/* latest from aajtak box start */}
+            <Box display='flex'
+            //   border='2px solid'
+            //   borderColor='orange.400'
+              w='100%'
+              h='600px'
+              p='10px'
+              gap='10px'
+              justifyContent='space-around'
+            
+            > 
+             <LatestAaj/>
+             <LatestDaily/>
+             <LatestLotThe/>
+            </Box>
+          {/* latest from aajtak box end */}
         </Box>
         // last main box side 
     )
